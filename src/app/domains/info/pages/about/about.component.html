@@ -1,0 +1,18 @@
+<div class="px-10">
+    <h1 class="text-lg font-bold">About</h1>
+    <p class="text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est exercitationem iusto suscipit magnam fuga
+        similique. Velit ducimus necessitatibus magni voluptatem tenetur. Unde illo numquam impedit dicta aliquam ab
+        dolores!
+    </p>
+    <p>Numero de clientes <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0" /></p>
+    <div>
+        <app-wave-audio audioUrl="assets/Faithless- insomnia (Noa remix).mp3" />
+    </div>
+</div>
+
+<!-- <input type="number" [value]="duration()" (change)="changeDuration($event)">
+<input type="text" [value]="message()" (change)="changeMessage($event)"> -->
+<!-- <p>
+    <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0" />
+</p> -->

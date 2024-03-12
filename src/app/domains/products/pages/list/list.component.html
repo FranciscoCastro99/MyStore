@@ -1,0 +1,17 @@
+<div class="container mx-auto">
+    <app-header/> 
+    <!-- [carrito]="Cart()" -> se saca del app porque ya no se necesita, debido al servicio -->
+    <!-- <h3 class="text-3xl">{{ Cart().length }}</h3> -->
+    <div class="grid grid-cols-4 gap-8 mt-5">
+        <app-product 
+            *ngFor="let producto of products()"
+            [product]="producto" 
+            (addToCart)="addToCart($event)" />
+        <!-- <app-product [title]="'Producto 2'" [price]="12" img="https://picsum.photos/640/640?r=24"(addToCart)="fromChild($event)"/>
+        <app-product [title]="'Producto 3'" [price]="12" img="https://picsum.photos/640/640?r=22" (addToCart)="fromChild($event)"/>
+        <app-product [title]="'Producto 4'" [price]="12" img="https://picsum.photos/640/640?r=21" (addToCart)="fromChild($event)"/> -->
+            <!-- [price]="producto.price" 
+            [img]="producto.img" -->
+            
+    </div>
+</div>
